@@ -39,7 +39,7 @@ SIZE = (IMG_SIZE, IMG_SIZE)
 # set to 3 to use color images
 COLOR_CHANNELS = 3
 
-PATH = '../gesture_dataset_sample'
+PATH = 'gesture_dataset_sample'
 
 
 annotations = dict()
@@ -55,7 +55,7 @@ def preprocess_image(img):
     return img_resized
 
 images = [] # stores actual image data
-labels = np.zeros(4) # stores labels (as integer - because this is what our network needs)
+labels = [] # stores labels (as integer - because this is what our network needs)
 
 # loop over all conditions
 # loop over all files in the condition's directory
